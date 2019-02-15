@@ -19,58 +19,85 @@ namespace MovingCatJohnathanM
 {
     public partial class frmMovingCat : Form
     {
+        // global variables
+        int zombieCount = 1;
+
         public frmMovingCat()
         {
             InitializeComponent();
         }
 
+            
         private void btnForwards_Click(object sender, EventArgs e)
         {
-            if (picZombie.Image == Properties.Resources.zombie1)
+            
+            if (zombieCount == 1)
             {
-                this.picZombie.Image = Properties.Resources.zombie2;
+                zombieCount = 2;
+
+                this.picZombie.Load(@"Images\zombie2.png");
+
             }
-            else if (picZombie.Image == Properties.Resources.zombie2)
+            else if (zombieCount == 2)
             {
-                this.picZombie.Image = Properties.Resources.zombie3;
+                zombieCount = 3;
+
+                this.picZombie.Load(@"Images\zombie3.png");
             }
-            else if (picZombie.Image == Properties.Resources.zombie3)
+            else if (zombieCount == 3)
             {
-                this.picZombie.Image = Properties.Resources.zombie4;
+                zombieCount = 4;
+
+                this.picZombie.Load(@"Images\zombie4.png");
             }
-            else if (picZombie.Image == Properties.Resources.zombie4)
+            else if (zombieCount == 4)
             {
-                this.picZombie.Image = Properties.Resources.zombie5;
+                zombieCount = 5;
+
+                this.picZombie.Load(@"Images\zombie5.png");
             }
-            else if (picZombie.Image == Properties.Resources.zombie5)
+            else if (zombieCount == 5)
             {
-                this.picZombie.Image = Properties.Resources.zombie6;
+                zombieCount = 6;
+
+                this.picZombie.Load(@"Images\zombie6.png");
             }
-            else if (picZombie.Image == Properties.Resources.zombie6)
+            else if (zombieCount == 6)
             {
-                this.picZombie.Image = Properties.Resources.zombie7;
+                zombieCount = 7;
+
+                this.picZombie.Load(@"Images\zombie7.png");
             }
-            else if (picZombie.Image == Properties.Resources.zombie7)
+            else if (zombieCount == 7)
             {
-                this.picZombie.Image = Properties.Resources.zombie8;
+                zombieCount = 8;
+
+                this.picZombie.Load(@"Images\zombie8.png");
             }
-            else if (picZombie.Image == Properties.Resources.zombie8)
+            else if (zombieCount == 8)
             {
-                this.picZombie.Image = Properties.Resources.zombie9;
+                zombieCount = 9;
+
+                this.picZombie.Load(@"Images\zombie9.png");
             }
-            else if (picZombie.Image == Properties.Resources.zombie9)
+            else if (zombieCount == 9)
             {
-                this.picZombie.Image = Properties.Resources.zombie10;
+                zombieCount = 10;
+
+                this.picZombie.Load(@"Images\zombie10.png");
             }
-            else if (picZombie.Image == Properties.Resources.zombie10)
+            else if (zombieCount == 10)
             {
-                this.picZombie.Image = Properties.Resources.zombie1;
+                zombieCount = 1;
+
+                this.picZombie.Load(@"Images\zombie1.png");
             }
+           
         }
 
         private void picZombie_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void frmMovingCat_Load(object sender, EventArgs e)
