@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ChangingAreaPerMeloche
 {
-    public partial class Form1 : Form
+    public partial class frmChangingAreaPer : Form
     {
-        public Form1()
+        public frmChangingAreaPer()
         {
             InitializeComponent();
         }
